@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Başarı Notu Hesaplama</title>
+  
+</head>
+<body>
+  <h2>Başarı Notu Hesaplama</h2>
+  
+<form>
+
+  <label>Yıl içi notu (vize + çalışmalar): </label>
+  <input type="number" id="yilIci" min="0" max="100" placeholder="0-100"><br><br>
+
+  <label>Genel sınav / Bütünleme notu: </label>
+  <input type="number" id="finalNotu" min="0" max="100" placeholder="0-100"><br><br>
+
+  <button  type="button" onclick="hesapla()">Hesapla</button>
+  <button type="reset" >sıfırla</button>
+
+  </form>
+  <h3>Sonuç:</h3>
+  <p id="sonuc"></p>
+
+  <script src="kod.js"></script>
+</body>
+</html>
